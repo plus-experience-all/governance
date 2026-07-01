@@ -33,7 +33,7 @@ governance/
 
 ### 저장소 처음 받기
 ```bash
-git clone https://github.com/ujeanjeon/governance.git
+git clone https://github.com/plus-experience-all/governance.git
 cd governance
 ```
 

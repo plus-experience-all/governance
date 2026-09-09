@@ -280,6 +280,7 @@
     <button class="vt-btn active">거버넌스</button>
     <button class="vt-btn" onclick="location.href='../CV/CV_governance.html'">핵심가치</button>
   </div>
+  <button class="export-icon-btn" id="govHistBtn" data-tooltip="수정 · 삭제 히스토리" aria-label="수정 · 삭제 히스토리"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/></svg></button>
   <button class="export-icon-btn" onclick="exportMarkdown()" data-tooltip="MD 내려받기"><svg width="14" height="14" viewBox="0 0 13 13" fill="none"><path d="M6.5 1.5v7M4 6.5l2.5 2.5 2.5-2.5M2 11h9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
   <div class="search-wrap" id="searchWrap"><div class="search-expand" id="searchExpand"><input id="searchField" class="search-field" placeholder="검색..." autocomplete="off"><span id="searchCounter" class="search-counter"></span><div class="search-nav-btns"><button id="searchPrev" class="search-nav-btn" title="이전">&#9650;</button><button id="searchNext" class="search-nav-btn" title="다음">&#9660;</button></div><button id="searchXBtn" class="search-x-btn" title="닫기">&times;</button></div><button class="search-icon-btn" id="searchBtn" title="검색" aria-label="검색"><svg width="15" height="15" viewBox="0 0 15 15" fill="none"><circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" stroke-width="1.4"/><path d="M10 10l3.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button></div>
 </header>
@@ -300,11 +301,11 @@
 
   <div class="doc-intro">
     <h1>UX Principles Governance</h1>
-    <p>SKT Next Platform의 고객 여정 수준 UX 원칙 정책서입니다.<br>진입(ETR)부터 문제해결(RSV)까지 7개 여정 단계에서 AI와 BSS가 고객 의도를 읽고 화면을 구성하는 기준을 정의합니다.<br>AI 스토리보드 생성 및 화면 설계 시 이 문서를 Single Source of Truth로 참조해주세요.</p>
+    <p><mark class="gov-mark" data-hid="h1" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="SKT Next Platform">SKT Next Channel</mark>의 고객 여정 수준 UX 원칙 정책서입니다.<br>진입(ETR)부터 <mark class="gov-mark" data-hid="h2" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="문제해결(RSV)까지 7개">관리(MGT)까지 8개</mark> 여정 단계에서 AI와 BSS가 고객 의도를 읽고 화면을 구성하는 기준을 정의합니다.<br>AI 스토리보드 생성 및 화면 설계 시 이 문서를 Single Source of Truth로 참조해주세요.</p>
     <div class="doc-meta">
       <div class="doc-meta-item"><strong>문서 코드</strong> UXP</div>
-      <div class="doc-meta-item"><strong>버전</strong> 1.1 (전략 레이어 통합)</div>
-      <div class="doc-meta-item"><strong>업데이트</strong> 2026.06.17</div>
+      <div class="doc-meta-item"><strong>버전</strong> 1.2</div>
+      <div class="doc-meta-item"><strong>업데이트</strong> 2026. 9. 9.</div>
       <div class="doc-meta-item"><strong>연관 문서</strong> UXPT_governance.html</div>
     </div>
   </div>
@@ -314,7 +315,7 @@
     <div class="section-header">
       <div class="section-header-top"><span class="section-code-badge">UXP · ETR</span></div>
       <div class="section-title">1. 진입 (Entry)</div>
-      <div class="section-desc">고객이 Next Platform에 진입하는 첫 접점입니다. 현재 상태와 직전 이용 맥락을 기반으로 선제적 UX를 제공하여, 고객이 목적 없이 탐색하지 않아도 되도록 해야 합니다.</div>
+      <div class="section-desc">고객이 <mark class="gov-mark" data-hid="h3" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="Next Platform">SKT Next Channel</mark>에 진입하는 첫 접점입니다. 현재 상태와 직전 이용 맥락을 기반으로 선제적 UX를 제공하여, 고객이 목적 없이 탐색하지 않아도 되도록 해야 합니다.</div>
       <div class="tag-row"><span class="tag">상태 기반 선제 대응</span><span class="tag">여정 재개</span><span class="tag">C360 진입</span><span class="tag">MicroTask</span><span class="tag">Push 트리거</span><span class="tag">외부 에이전트 유입</span></div>
     </div>
 
@@ -561,7 +562,7 @@
         <div class="pattern-id-badge">UXP_EXP_1</div>
         <div class="pattern-meta">
           <div class="pattern-name">맥락 기반 유동적 전시</div>
-          <div class="pattern-desc">고객의 context_type(단말 관심·구독 관심·결합 관심)과 시간·위치 정보를 조합하여 콘텐츠 노출 순서와 카피를 동적으로 구성합니다.</div>
+          <div class="pattern-desc"><mark class="gov-mark" data-hid="h4" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="고객의 context_type(단말 관심·구독 관심·결합 관심)과 시간·위치 정보를 조합하여 콘텐츠 노출 순서와 카피를 동적으로 구성합니다.">고객의 맥락(context_type)을 고려할 수 있는 경우, 해당 맥락에 따라 콘텐츠 노출 순서와 카피를 동적으로 구성합니다.</mark></div>
         </div>
         <span class="status-badge status-fundamental">Fundamental</span>
       </div>
@@ -569,7 +570,7 @@
         <div>
           <div class="rule-label">Rules</div>
           <div class="rule-row"><span class="rule-num">R1</span>context_type에 따라 ContentList 최상단 블록을 결정합니다. 모든 고객에게 동일한 순서를 노출하지 않습니다. ContentList의 최상단 블록은 Zone B(스크롤 진입 후 영역)의 첫 번째 콘텐츠 위치에 해당하며, Zone A(홈 LLM 입력 필드 및 MicroTaskCard)를 침범하지 않는다.</div>
-          <div class="rule-row"><span class="rule-num">R2</span>마케팅 배너 카피는 세그먼트별로 분기합니다. 동일 문구를 전체 고객에게 적용하지 않습니다.</div>
+          <div class="rule-row"><span class="rule-num">R2</span><span><mark class="gov-mark" data-hid="h5" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="마케팅 배너 카피는 세그먼트별로 분기합니다. 동일 문구를 전체 고객에게 적용하지 않습니다.">고객 데이터가 유의미한 경우, 해당 데이터를 기반으로 최적화된 문구를 제공합니다.</mark></span></div>
           <div class="rule-row"><span class="rule-num">R3</span>실시간 위치 기반 쿠폰이 있으면 nearby_coupon_card를 우선 삽입합니다.</div>
           <div class="rule-row"><span class="rule-num">R4</span>usage_context·behavior_history 모두 없을 경우 플랫폼 인기순 Default 목록으로 Fallback합니다.</div>
           <div class="rule-row"><span class="rule-num">R5</span>BSS가 family_bundle_candidate를 탐지하면 FamilyBundlePromoCard를 content_secondary 슬롯에 삽입합니다. 탐색 중 결합 오퍼를 방해하지 않는 비침습적 위치(콘텐츠 하단)에 배치합니다.</div>
@@ -683,7 +684,7 @@
           <div class="rule-row"><span class="rule-num">R1</span>혜택이 하나라도 있으면 BenefitDashboard를 benefit_hub 슬롯에 렌더링합니다.</div>
           <div class="rule-row"><span class="rule-num">R2</span>포인트·쿠폰·구독은 개별 카드가 아닌 통합 대시보드로 묶어 전체 혜택 가치를 수치화합니다.</div>
           <div class="rule-row"><span class="rule-num">R3</span>사용하지 않은 혜택이 있으면 "사용하지 않은 혜택 {N}개" 배지를 강조합니다.</div>
-          <div class="rule-row"><span class="rule-num">R4</span>혜택 사용률이 3개월 연속 0%인 경우 ISR 신호로 연동하여 홈 카드 우선 노출을 트리거합니다.</div>
+          <div class="rule-row"><span class="rule-num">R4</span><span><mark class="gov-mark" data-hid="h6" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="혜택 사용률이 3개월 연속 0%인 경우 ISR 신호로 연동하여 홈 카드 우선 노출을 트리거합니다.">혜택 사용률 지표가 저조한 경우 ISR 신호로 연동하여 홈 카드 우선 노출을 트리거합니다.</mark></span></div>
           <div class="rule-row"><span class="rule-num">R5</span>user.tenure_years >= 5이면 BenefitDashboard 최상단에 "SKT {tenure_years}년 고객 누적 혜택 총 {cumulative_value}원 상당" 배너를 강조 표시합니다. 장기고객에게 SKT와의 관계가 쌓아온 가치를 구체적 수치로 체감하게 합니다.</div>
           <div class="rule-row"><span class="rule-num">R6</span>subscription_sharing_available == true이면 "구독 파티 초대하기" CTA를 benefit_hub 슬롯 하단에 노출합니다. 구독 혜택 소비를 통한 관계 확장 진입점을 제공합니다.</div>
         </div>
@@ -784,7 +785,7 @@
           <div class="rule-row"><span class="rule-num">R1</span>이벤트 진입 시 참여 조건·혜택·마감일을 단일 요약 카드로 즉시 노출합니다.</div>
           <div class="rule-row"><span class="rule-num">R2</span>참여 완료까지 필요한 단계를 3단계 이내로 유지하며, 현재 위치를 상단에 고정 표시합니다.</div>
           <div class="rule-row"><span class="rule-num">R3</span>참여 완료 즉시 획득 혜택과 사용 가능 시점을 명시하여 이탈 없이 참여 가치를 즉시 인지하게 합니다.</div>
-          <div class="rule-row"><span class="rule-num">R4</span>이벤트 참여에 필요한 회원 정보(이름·연락처·주소 등)가 등록된 경우, 참여 폼을 자동 완성하고 고객에게 확인만 요구한다. 등록되지 않은 필드만 입력란으로 표시한다.</div>
+          <div class="rule-row"><span class="rule-num">R4</span><span>이벤트 참여에 필요한 회원 정보(이름·연락처·주소 등)가 등록된 경우, 참여 폼을 자동 완성하고 고객에게 확인만 요구한다.</span></div>
         </div>
         <div>
           <div class="rule-label">Scenario</div>
@@ -865,7 +866,7 @@
         <div class="pattern-id-badge">UXP_EXP_4</div>
         <div class="pattern-meta">
           <div class="pattern-name">탐색 모드 이중성과 전환</div>
-          <div class="pattern-desc">Next 플랫폼의 탐색은 두 가지 모드가 공존합니다. 고객은 AI와 대화하며 의도를 표현하는 대화형 탐색과, 탭·스크롤로 직접 콘텐츠를 둘러보는 직접 탐색 사이를 자유롭게 전환할 수 있습니다. 플랫폼은 두 모드 간 전환 비용을 0에 가깝게 유지해야 합니다.</div>
+          <div class="pattern-desc"><mark class="gov-mark" data-hid="h7" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="Next 플랫폼">SKT Next Channel</mark>의 탐색은 두 가지 모드가 공존합니다. 고객은 AI와 대화하며 의도를 표현하는 대화형 탐색과, 탭·스크롤로 직접 콘텐츠를 둘러보는 직접 탐색 사이를 자유롭게 전환할 수 있습니다. 플랫폼은 두 모드 간 전환 비용을 0에 가깝게 유지해야 합니다.</div>
         </div>
         <span class="status-badge status-new">New</span>
       </div>
@@ -888,7 +889,7 @@
         <div>
           <div class="rule-label">Rules</div>
           <div class="rule-row"><span class="rule-num">R1</span>두 모드는 상호 배타적이지 않습니다. 직접 탐색 중 LLM 입력 필드를 탭하면 현재 화면 컨텍스트(상품 ID·카테고리)를 LLM에 전달하며 대화형 모드로 전환합니다 (SDUI_3 R3 참조).</div>
-          <div class="rule-row"><span class="rule-num">R2</span>모드 전환 시 이전 탐색 상태(스크롤 위치·선택 필터·입력값)를 세션 내 보존합니다. 대화형 태스크 완료 후 직접 탐색으로 복귀할 때 이전 위치가 복원되어야 합니다.</div>
+          <div class="rule-row"><span class="rule-num">R2</span><span><mark class="gov-mark" data-hid="h8" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="모드 전환 시 이전 탐색 상태(스크롤 위치·선택 필터·입력값)를 세션 내 보존합니다.">모드 전환 시 이전 탐색 상태를 세션 내 보존합니다.</mark> 대화형 태스크 완료 후 직접 탐색으로 복귀할 때 이전 위치가 복원되어야 합니다.</span></div>
           <div class="rule-row"><span class="rule-num">R3</span>어떤 탐색 모드에서든 동일한 목적지(상품 상세·결제 화면 등)에 도달할 수 있어야 합니다. 대화형 모드에서만 접근 가능한 기능 또는 직접 탐색에서만 접근 가능한 기능을 만들지 않습니다.</div>
           <div class="rule-row"><span class="rule-num">R4</span>플랫폼은 고객에게 모드 선택을 강요하지 않습니다. 기본 진입 상태는 대화형 탐색(Zone A)이지만, 스크롤 한 번으로 직접 탐색으로 자연스럽게 전환 가능합니다.</div>
           <div class="rule-row"><span class="rule-num">R5</span>모드 전환 중 로딩이 발생할 경우 스켈레톤 UI를 즉시 표시하고 전환 시작 500ms 이내에 화면을 렌더링합니다. 전환 지연으로 인한 모드 선택 피로를 유발하지 않습니다.</div>
@@ -997,7 +998,7 @@
     <div class="section-header">
       <div class="section-header-top"><span class="section-code-badge">UXP · SCH</span></div>
       <div class="section-title">3. 검색 (Search)</div>
-      <div class="section-desc">Next 플랫폼에서 '검색'은 전통적인 검색창 입력에 한정되지 않습니다. 홈 Zone A의 LLM 입력 필드와 전통적 검색 화면은 모두 고객 의도를 받아들이는 입력 표면이며, 입력 표면에 따라 응답 표면(대화형 UI vs 결과 목록)이 다르게 결정됩니다. LLM 입력은 SCH→DCD→ACT 여정 단계를 압축할 수 있으며, 이것이 예외가 아닌 기본 설계입니다.</div>
+      <div class="section-desc"><mark class="gov-mark" data-hid="h9" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="Next 플랫폼">SKT Next Channel</mark>에서 '검색'은 전통적인 검색창 입력에 한정되지 않습니다. 홈 Zone A의 LLM 입력 필드와 전통적 검색 화면은 모두 고객 의도를 받아들이는 입력 표면이며, 입력 표면에 따라 응답 표면(대화형 UI vs 결과 목록)이 다르게 결정됩니다. LLM 입력은 SCH→DCD→ACT 여정 단계를 압축할 수 있으며, 이것이 예외가 아닌 기본 설계입니다.</div>
       <div class="tag-row"><span class="tag">의도 중심 해석</span><span class="tag">LLM 입력 표면</span><span class="tag">자연어 vs 키워드</span><span class="tag">여정 압축</span><span class="tag">맞춤 결과 순위</span><span class="tag">대안 경로</span></div>
     </div>
 
@@ -1017,7 +1018,7 @@
           <div class="rule-row"><span class="rule-num">R2</span>search_type == 'keyword': 개인화 랭킹 기반 integrated_search_result_page로 라우팅합니다.</div>
           <div class="rule-row"><span class="rule-num">R3</span>의도가 모호한 경우 zero-result 페이지를 노출하지 않고 추가 질문 또는 추천 검색어를 렌더링합니다.</div>
           <div class="rule-row"><span class="rule-num">R4</span>자연어 검색에 단순 키워드 매칭 알고리즘을 적용하지 않습니다.</div>
-          <div class="rule-row"><span class="rule-num">R5</span>intent_type == 'direct_action'이면 DCD(의사결정 지원) 단계를 생략하고 ACT(실행) 단계로 즉시 라우팅합니다. LLM 입력을 통한 여정 압축(SCH→DCD→ACT 건너뜀)은 예외가 아닌 Next 플랫폼의 기본 설계입니다. 모든 입력 표면에서 의도가 명확할 경우 중간 단계 없이 즉시 처리를 시작합니다.</div>
+          <div class="rule-row"><span class="rule-num">R5</span><span>intent_type == 'direct_action'이면 DCD(의사결정 지원) 단계를 생략하고 ACT(실행) 단계로 즉시 라우팅합니다. LLM 입력을 통한 여정 압축(SCH→DCD→ACT 건너뜀)은 예외가 아닌 <mark class="gov-mark" data-hid="h10" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="Next 플랫폼">SKT Next Channel</mark>의 기본 설계입니다. 모든 입력 표면에서 의도가 명확할 경우 중간 단계 없이 즉시 처리를 시작합니다.</span></div>
         </div>
         <div>
           <div class="rule-label">Scenario</div>
@@ -1157,7 +1158,7 @@
         <div class="pattern-id-badge">UXP_SCH_3</div>
         <div class="pattern-meta">
           <div class="pattern-name">입력 표면 구분과 응답 표면 분기</div>
-          <div class="pattern-desc">Next 플랫폼에는 고객 의도를 입력받는 두 가지 표면이 공존합니다. 홈 LLM 입력 필드(대화형 발화)와 검색 화면(키워드·자연어)은 동일한 의도 해석 레이어를 공유하지만, 입력 맥락에 따라 응답 표면이 다르게 결정됩니다.</div>
+          <div class="pattern-desc"><mark class="gov-mark" data-hid="h11" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="Next 플랫폼">SKT Next Channel</mark>에는 고객 의도를 입력받는 두 가지 표면이 공존합니다. 홈 LLM 입력 필드(대화형 발화)와 검색 화면(키워드·자연어)은 동일한 의도 해석 레이어를 공유하지만, 입력 맥락에 따라 응답 표면이 다르게 결정됩니다.</div>
         </div>
         <span class="status-badge status-new">New</span>
       </div>
@@ -1282,7 +1283,7 @@
           <div class="rule-row"><span class="rule-num">R4</span>단말 교체 + 결합 복잡 케이스에서는 사전 구성된 번들 최적안 하나를 제시합니다.</div>
           <div class="rule-row"><span class="rule-num">R5</span>user.tenure_years >= 3이면 OptimalPlanCard에 장기고객 추가 혜택(단말 지원금 상향, 멤버십 등급 업그레이드 등)을 함께 병기합니다. 장기 관계가 현재 결정에 가져다주는 실질 이익을 수치로 표현합니다.</div>
           <div class="rule-row"><span class="rule-num">R6</span>family_bundle_candidate IS NOT NULL이면 결합 최적안(가족 합산 절감액)을 OptimalPlanCard 하단에 별도 블록으로 제시합니다. 개인 최적안과 결합 최적안을 동시에 비교할 수 있도록 합니다.</div>
-          <div class="rule-row"><span class="rule-num">R7</span>AI 추천 근거는 3개 이내 핵심 데이터 포인트로 요약하여 OptimalPlanCard 내 설명 영역에 제시합니다. 고객이 추천 이유를 즉시 이해할 수 있어야 하며, 모델 내부 로직을 노출하지 않습니다.</div>
+          <div class="rule-row"><span class="rule-num">R7</span><span><mark class="gov-mark" data-hid="h12" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="AI 추천 근거는 3개 이내 핵심 데이터 포인트로 요약하여 OptimalPlanCard 내 설명 영역에 제시합니다.">AI 추천 근거는 핵심 데이터 포인트로 요약하여 OptimalPlanCard 내 설명 영역에 제시합니다.</mark> 고객이 추천 이유를 즉시 이해할 수 있어야 하며, 모델 내부 로직을 노출하지 않습니다.</span></div>
           <div class="rule-row"><span class="rule-num">R8</span>OptimalPlanCard에 유료 부가서비스가 포함된 경우, 해당 항목은 기본 선택 해제 상태(opt-in 방식)로 표시하며 고객이 직접 선택해야만 주문에 포함된다.</div>
           <div class="rule-row"><span class="rule-num">R9</span>usage_pattern 또는 contract_status 데이터가 확인되지 않는 경우, OptimalPlanCard를 렌더링하지 않고 usage_input_prompt(사용 패턴 입력 안내)를 먼저 표시한 후 요금제 목록을 제공한다.</div>
         </div>
@@ -1609,7 +1610,7 @@
         <div>
           <div class="rule-label">Rules</div>
           <div class="rule-row"><span class="rule-num">R1</span>action_type에 따른 리스크(위약금·혜택 소멸·환불 조건)를 실행 전 단계에서 구체적 수치와 함께 안내합니다.</div>
-          <div class="rule-row"><span class="rule-num">R2</span>리스크 안내는 경고 모달이 아닌 인라인 정보 카드로 제공하여 플로우를 차단하지 않습니다.</div>
+          <div class="rule-row"><span class="rule-num">R2</span><span><mark class="gov-mark" data-hid="h13" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="리스크 안내는 경고 모달이 아닌 인라인 정보 카드로 제공하여 플로우를 차단하지 않습니다.">리스크 안내는 사용자의 태스크 플로우를 차단하지 않도록 인라인 정보 카드를 제공하는 것을 원칙으로 한다. 단, 사용자에게 명시적 인지가 필요한 액션의 경우 예외적으로 팝업을 제공한다.</mark></span></div>
           <div class="rule-row"><span class="rule-num">R3</span>리스크를 감수하고 진행하는 선택과 대안 경로(취소·다른 옵션)를 동시에 제공합니다.</div>
           <div class="rule-row"><span class="rule-num">R4</span>실행 화면의 요약 체크리스트에서 유료 부가서비스는 별도 섹션으로 분리하고, 기본값은 선택 해제(opt-in) 상태로 표시한다. 고객이 명시적으로 선택한 경우에만 주문에 포함된다.</div>
         </div>
@@ -2478,7 +2479,7 @@
           <div class="rule-row"><span class="rule-num">R1</span>요금제·부가서비스·결합·약정·할부를 회선 단위가 아닌 고객 계약 관계 단위로 재구성하여 표시한다. 통신 내부 용어(선택약정·대표회선·정액제)는 고객이 이해할 수 있는 언어로 변환한다.</div>
           <div class="rule-row"><span class="rule-num">R2</span>각 계약 항목에 변경 가능 여부를 상태 배지로 표시한다. 변경 가능한 항목은 인라인 CTA를 함께 제공한다.</div>
           <div class="rule-row"><span class="rule-num">R3</span>약정 종료일·할인 만료일·혜택 만료일이 30일 이내인 경우 해당 항목에 경고 배지를 표시하고, UXP_ETR_1의 MicroTaskCard와 연동하여 홈에서도 선제 안내한다.</div>
-          <div class="rule-row"><span class="rule-num">R4</span>가족 회선 또는 결합 회선이 있는 경우, 고객의 주요 회선을 기본으로 표시하고 다른 회선은 펼침 형태로 제공한다.</div>
+          <div class="rule-row"><span class="rule-num">R4</span><span><mark class="gov-mark" data-hid="h14" data-date="2026-09-07T00:00:00+09:00" style="background:#fff59d;padding:0 1px;border-radius:2px;" data-before="가족 회선 또는 결합 회선이 있는 경우, 고객의 주요 회선을 기본으로 표시하고 다른 회선은 펼침 형태로 제공한다.">가족 회선 또는 결합 회선이 있는 경우, 고객의 주요 회선을 기본으로 표시하고 다른 회선을 선택할 수 있게 제공한다.</mark></span></div>
           <div class="rule-row"><span class="rule-num">R5</span>조회 화면에서 즉시 처리 가능한 업무(부가서비스 해지·요금제 변경 등)는 3탭 이내로 진입할 수 있어야 한다. (UXP_EXP_1 탐색 원칙 적용)</div>
         </div>
         <div>
@@ -2800,6 +2801,8 @@ function exportMarkdown() {
   sessionStorage.setItem('govTab',ci);
   mv(ta[pi]||c,false);
   requestAnimationFrame(function(){requestAnimationFrame(function(){mv(c,true);});});
+  var rt;
+  window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){mv(c,false);},80);});
 }());
 </script>
 
@@ -2872,13 +2875,17 @@ function tkOpen(badgeName, hlChip) {
 
   document.getElementById('tkOvl').classList.add('open');
   document.getElementById('tkPnl').classList.add('open');
+  document.body.classList.add('gov-hist-lock');
 }
 
 function tkClose() {
   document.getElementById('tkOvl').classList.remove('open');
   document.getElementById('tkPnl').classList.remove('open');
+  document.body.classList.remove('gov-hist-lock');
   var inner = document.querySelector('.tk-panel-inner');
   if (inner) inner.scrollTop = 0;
+  var panel = document.getElementById('tkPnl');
+  if (panel) panel.style.width = '';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -3060,6 +3067,496 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { cvClose(); closeSrch(); } });
 });
+</script>
+
+<style>
+#gov-before-tooltip {
+  position: fixed;
+  z-index: 99999;
+  background: #ffffff;
+  color: #222222;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+  padding: 16px 18px;
+  font-size: 14px;
+  line-height: 1.6;
+  pointer-events: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  box-sizing: border-box;
+}
+#gov-before-tooltip .gov-tt-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#gov-before-tooltip .gov-tt-label {
+  font-weight: 700;
+  font-size: 11px;
+  color: #111111;
+}
+#gov-before-tooltip .gov-tt-date {
+  font-size: 11px;
+  color: #AFAFAF;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+#gov-before-tooltip .gov-tt-divider {
+  height: 1px;
+  background: #E4E4E4;
+  margin: 16px -18px;
+  align-self: stretch;
+}
+#gov-before-tooltip .gov-tt-before {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #999999;
+  text-decoration: line-through;
+  word-break: break-word;
+  white-space: normal;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+#gov-before-tooltip .gov-tt-after {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #222222;
+  line-height: 1.6;
+  word-break: break-word;
+  white-space: normal;
+}
+#gov-before-tooltip .gov-tt-after mark {
+  background: #fff59d;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+mark.gov-mark { cursor: default; }
+</style>
+<script>
+(function () {
+  var tip = document.createElement('div');
+  tip.id = 'gov-before-tooltip';
+  tip.innerHTML = '<div class="gov-tt-head"><span class="gov-tt-label"></span><span class="gov-tt-date"></span></div><div class="gov-tt-divider"></div><div class="gov-tt-before"></div><div class="gov-tt-after"><mark></mark></div>';
+  document.body.appendChild(tip);
+  var labelEl = tip.querySelector('.gov-tt-label');
+  var dateEl = tip.querySelector('.gov-tt-date');
+  var beforeEl = tip.querySelector('.gov-tt-before');
+  var afterMarkEl = tip.querySelector('.gov-tt-after mark');
+
+  function timeAgo(dateStr) {
+    if (!dateStr) return '';
+    var then = new Date(dateStr).getTime();
+    if (isNaN(then)) return '';
+    var diffMs = Math.max(0, Date.now() - then);
+    var min = Math.floor(diffMs / 60000);
+    if (min < 1) return '방금 전';
+    if (min < 60) return min + '분 전';
+    var hr = Math.floor(min / 60);
+    if (hr < 24) return hr + '시간 전';
+    var day = Math.floor(hr / 24);
+    if (day < 30) return day + '일 전';
+    var month = Math.floor(day / 30);
+    if (month < 12) return month + '개월 전';
+    var year = Math.floor(month / 12);
+    return year + '년 전';
+  }
+
+  function position(e) {
+    var pad = 14;
+    var x = e.clientX + pad;
+    var y = e.clientY + pad;
+    var rect = tip.getBoundingClientRect();
+    if (x + rect.width > window.innerWidth) x = e.clientX - rect.width - pad;
+    if (y + rect.height > window.innerHeight) y = e.clientY - rect.height - pad;
+    if (x < 4) x = 4;
+    if (y < 4) y = 4;
+    tip.style.left = x + 'px';
+    tip.style.top = y + 'px';
+  }
+
+  function show(e, mark) {
+    var label = mark.getAttribute('data-label') || '수정 내용';
+    labelEl.textContent = label;
+    dateEl.textContent = timeAgo(mark.getAttribute('data-date') || '');
+    if (label === '수정 내용') {
+      beforeEl.textContent = mark.getAttribute('data-before') || '';
+      beforeEl.style.display = 'block';
+    } else {
+      beforeEl.textContent = '';
+      beforeEl.style.display = 'none';
+    }
+    afterMarkEl.textContent = mark.textContent;
+    tip.style.display = 'flex';
+    position(e);
+  }
+
+  function hide() {
+    tip.style.display = 'none';
+  }
+
+  document.querySelectorAll('mark.gov-mark').forEach(function (m) {
+    m.addEventListener('mouseenter', function (e) { show(e, m); });
+    m.addEventListener('mousemove', position);
+    m.addEventListener('mouseleave', hide);
+  });
+})();
+</script>
+
+<style>
+.gov-hist-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0); pointer-events: none; z-index: 500; transition: background .25s; }
+.gov-hist-overlay.open { background: rgba(0,0,0,.35); pointer-events: all; }
+body.gov-hist-lock { overflow: hidden; }
+.gov-hist-panel { position: fixed; top: 0; right: -420px; bottom: 0; width: 400px; background: #fff; box-shadow: -4px 0 40px rgba(0,0,0,.12); z-index: 501; transition: right .3s cubic-bezier(.4,0,.2,1); display: flex; flex-direction: column; }
+.gov-hist-panel.open { right: 0; }
+.gov-hist-panel-head { position: sticky; top: 0; z-index: 2; background: #fff; border-bottom: 1px solid #EBEBEB; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-shrink: 0; }
+.gov-hist-panel-title { font-size: 14px; font-weight: 700; color: #111; display: flex; align-items: center; }
+.gov-hist-panel-count { font-size: 11px; font-weight: 700; color: #888; background: #F3F4F6; padding: 2px 8px; border-radius: 999px; margin-left: 8px; }
+.gov-hist-close { width: 28px; height: 28px; background: #F0F0F0; border: none; border-radius: 50%; cursor: pointer; font-size: 16px; line-height: 1; color: #555; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.gov-hist-close:hover { background: #E4E4E4; }
+.gov-hist-toolbar { display: flex; align-items: center; gap: 8px; padding: 10px 20px; border-bottom: 1px solid #EBEBEB; flex-shrink: 0; }
+.gov-hist-search-wrap { position: relative; flex: 1; min-width: 0; display: flex; align-items: center; }
+.gov-hist-search-icon { position: absolute; left: 9px; color: #B0B0B0; pointer-events: none; }
+.gov-hist-search { width: 100%; box-sizing: border-box; height: 30px; border: 1px solid #E4E4E4; border-radius: 6px; padding: 0 10px 0 28px; font-size: 12px; color: #333; background: #FAFAFA; }
+.gov-hist-search:focus { outline: none; border-color: #C7C7C7; background: #fff; }
+.gov-hist-filter-wrap { position: relative; flex-shrink: 0; }
+.gov-hist-filter { height: 30px; border: 1px solid #E4E4E4; border-radius: 6px; padding: 0 8px; font-size: 12px; color: #333; background: #fff; flex-shrink: 0; cursor: pointer; display: flex; align-items: center; gap: 4px; font-family: inherit; white-space: nowrap; }
+.gov-hist-filter-menu { position: absolute; top: 34px; right: 0; min-width: 140px; background: #fff; border: 1px solid #E4E4E4; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.16); padding: 6px; display: none; z-index: 10; }
+.gov-hist-filter-menu.open { display: block; }
+.gov-hist-filter-opt { display: flex; align-items: center; gap: 6px; padding: 7px 10px; font-size: 12px; color: #333; border-radius: 6px; cursor: pointer; }
+.gov-hist-filter-opt:hover { background: #F3F4F6; }
+.gov-hist-filter-opt.active { color: #111; font-weight: 700; }
+.gov-hist-filter-opt.disabled { color: #ccc; cursor: not-allowed; pointer-events: none; }
+.gov-hist-filter-opt-check { width: 12px; flex-shrink: 0; font-size: 11px; line-height: 1; color: #111; text-align: center; }
+.gov-hist-filter-divider { height: 1px; background: #E4E4E4; margin: 4px -6px; }
+.gov-hist-panel-body { padding: 12px; flex: 1; overflow-y: auto; }
+.gov-hist-item { display: block; width: 100%; text-align: left; background: #fff; border: 1px solid #ECECEC; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; cursor: pointer; transition: border-color .12s, background .12s; font-family: inherit; }
+.gov-hist-item:hover { border-color: #D8D8D8; background: #FAFAFA; }
+.gov-hist-item-top { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
+.gov-hist-item-badge { font-size: 10px; font-weight: 700; color: #111111; background: #EFEFEF; padding: 2px 7px; border-radius: 4px; display: inline-block; }
+.gov-hist-item-time { font-size: 10px; color: #AFAFAF; margin-left: auto; flex-shrink: 0; }
+.gov-hist-item-before { font-size: 12px; color: #999; text-decoration: line-through; margin-bottom: 3px; word-break: break-word; line-height: 1.5; }
+.gov-hist-item-after { font-size: 13px; color: #222; line-height: 1.6; word-break: break-word; }
+.gov-hist-item-after mark { background: #fff59d; padding: 0 2px; border-radius: 2px; }
+.gov-hist-empty { font-size: 12px; color: #999; text-align: center; padding: 60px 0; }
+@keyframes govHistPulse { 0% { box-shadow: 0 0 0 0 rgba(249,168,37,.55); } 70% { box-shadow: 0 0 0 8px rgba(249,168,37,0); } 100% { box-shadow: 0 0 0 0 rgba(249,168,37,0); } }
+.gov-mark-focus { animation: govHistPulse 1s ease-out 1; }
+.gov-hist-item-removed { display: inline-block; font-size: 11px; font-weight: 700; color: #D32F2F; background: #FDECEA; padding: 2px 8px; border-radius: 4px; margin-top: 2px; }
+.gov-hist-item-active { border-color: #F9A825; background: #FFFBEA; }
+</style>
+<script>
+(function () {
+  var CURRENT_FILE = 'UXP';
+  var currentFilter = 'all';
+  var FILE_ORDER = ['UXP', 'UXPT', 'VOT', 'AIG'];
+  var FILE_LABELS = { UXP: 'UXP 페이지', UXPT: 'UXPT 페이지', VOT: 'VOT 페이지', AIG: 'AIG 페이지' };
+  var OTHERS = [{ file: 'UXPT', url: '../UXPT/UXPT_governance.html', items: [{"hid": "h1", "badge": "UXPT", "label": "수정 내용", "before": "SKT Next Platform", "after": "SKT Next Channel", "date": "2026-09-07T00:00:00+09:00"}] }, { file: 'VOT', url: '../VOT/VOT_governance.html', items: [{"hid": "h1", "badge": "VOT", "label": "수정 내용", "before": "SKT Next Platform", "after": "SKT Next Channel", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h2", "badge": "VOT · DEF", "label": "수정 내용", "before": "SKT Next Platform", "after": "SKT Next Channel", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h3", "badge": "VOT_DEF_1", "label": "수정 내용", "before": "SKT Next Platform", "after": "SKT Next Channel", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h4", "badge": "VOT_DEF_1", "label": "수정 내용", "before": "SKT Next Platform", "after": "SKT Next Channel", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h5", "badge": "VOT_DEF_1", "label": "수정 내용", "before": "\"완료됩니다\"가 아닌 \"다음 달 1일부터 적용됩니다\"처럼 결과를 끝까지 안내합니다.", "after": "\"완료돼요\"가 아닌 \"다음 달 1일부터 적용돼요\" 처럼 결과를 끝까지 안내합니다.", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h6", "badge": "VOT_DEF_2", "label": "수정 내용", "before": "적용됩니다", "after": "적용돼요", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h7", "badge": "VOT_RUL_2", "label": "수정 내용", "before": "적용됩니다", "after": "적용돼요", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h8", "badge": "VOT_RUL_3", "label": "수정 내용", "before": "SKT Next Platform", "after": "SKT Next Channel", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h9", "badge": "VOT_RUL_4", "label": "내용 추가", "before": "수정 전 텍스트 없음 (신규 추가된 문구)", "after": "대·소문자 구분이 필요한 단위는 표준 표기법에 따라 정확히 구분하여 표기. (예: Mbps, kbps).", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h10", "badge": "VOT · SIT", "label": "수정 내용", "before": "T world Next에서", "after": "SKT Next Channel에서", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h11", "badge": "VOT_SIT_1", "label": "수정 내용", "before": "나타납니다", "after": "표시돼요", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h12", "badge": "VOT_SIT_4", "label": "수정 내용", "before": "적용됩니다", "after": "적용돼요", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h13", "badge": "VOT_SEG_1", "label": "수정 내용", "before": "약어·용어 없이 풀어 씁니다. \"VoLTE\" → \"고품질 통화\"", "after": "전문용어는 이해하기 쉽게 씁니다. 필요한 경우에는 괄호나 짧은 설명을 함께 제공합니다. \"VoLTE(고품질 통화)\"", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h14", "badge": "VOT_CMP_BTM_3", "label": "수정 내용", "before": "\"확인\" 단독 사용 금지: 행동 대상이 없는 단독 \"확인\"은 사용하지 않습니다. 맥락에 맞는 동사로 대체합니다.", "after": "명확한 행동 표현: 버튼의 목적과 수행되는 행동을 명확하게 알 수 있는 동사를 사용합니다.", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h15", "badge": "VOT_CMP_BTM_3", "label": "수정 내용", "before": "동의하기 · 선물하기 · 변경하기", "after": "보기 · 작성하기 · 방문 예약하기", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h16", "badge": "VOT_CMP_BTM_3", "label": "수정 내용", "before": "\"동사 + 목적어\" 형태로 고객이 실행하는 행동을 명확히 표현합니다.", "after": "버튼은 짧은 시간 안에 의미를 전달해야 합니다.", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h17", "badge": "VOT_CMP_BTM_3", "label": "수정 내용", "before": "확인 · OK · 예", "after": "보러 가기 · 작성하러 가기 · 방문 예약하러 가기", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h18", "badge": "VOT_CMP_BTM_3", "label": "수정 내용", "before": "행동 대상이 없는 단독 동사나 외래어는 어떤 결과가 발생하는지 알 수 없습니다.", "after": "하나의 행동을 2개의 단어로 늘리지 않습니다. '~하러 가기' 처럼 불필요하게 단어를 늘리지 않습니다.", "date": "2026-09-07T00:00:00+09:00"}] , deletions: [{"hid": "d1", "badge": "VOT_SEG_3", "before": "문장 길이를 일반 기준보다 20% 줄입니다. 문장당 15자 이내를 권장합니다.", "date": "2026-09-07T00:00:00+09:00", "selector": "[data-pattern-id=\"VOT_SEG_3\"]", "removedLabel": "R1 내용 삭제함"}, {"hid": "d2", "badge": "VOT_RUL_1", "before": "표에서 '최대 길이' 열 삭제", "date": "2026-09-07T00:00:00+09:00", "selector": "[data-pattern-id=\"VOT_RUL_1\"]", "removedLabel": "최대 글자 수 정의 삭제"}, {"hid": "d3", "badge": "VOT_CMP_BTM_2", "before": "최대 글자수:1줄 처리 기준 약 20자 이내. 초과 시 말줄임표(…) 처리가 적용됩니다. 핵심 정보가 잘리지 않도록 우선순위가 높은 정보를 앞에 배치합니다.", "date": "2026-09-07T00:00:00+09:00", "selector": "[data-pattern-id=\"VOT_CMP_BTM_2\"]", "removedLabel": "최대 글자 수 정의 삭제"}, {"hid": "d4", "badge": "VOT_CMP_BTM_3", "before": "최대 8자:버튼 너비 제약으로 인해 8자를 초과하지 않습니다. 긴 행동 설명은 제목이나 Alert에서 보완합니다.", "date": "2026-09-07T00:00:00+09:00", "selector": "[data-pattern-id=\"VOT_CMP_BTM_3\"]", "removedLabel": "최대 글자 수 정의 삭제"}, {"hid": "d5", "badge": "VOT_CMP_BTM_4", "before": "최대 1줄 기준 약 16자 이내", "date": "2026-09-07T00:00:00+09:00", "selector": "[data-pattern-id=\"VOT_CMP_BTM_4\"]", "removedLabel": "최대 글자 수 정의 삭제"}] }, { file: 'AIG', url: '../AIG/AIG_governance.html', items: [{"hid": "h1", "badge": "AIG", "label": "수정 내용", "before": "SKT Next Platform", "after": "SKT Next Channel", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h2", "badge": "AIG · DEF", "label": "수정 내용", "before": "SKT Next Platform", "after": "SKT Next Channel", "date": "2026-09-07T00:00:00+09:00"}, {"hid": "h3", "badge": "AIG · VIC", "label": "수정 내용", "before": "Next Platform", "after": "SKT Next Channel", "date": "2026-09-07T00:00:00+09:00"}] }];
+
+  var CURRENT_DELETIONS = [];
+
+  var overlay = document.createElement('div');
+  overlay.className = 'gov-hist-overlay';
+  overlay.id = 'govHistOvl';
+  document.body.appendChild(overlay);
+
+  var panel = document.createElement('div');
+  panel.className = 'gov-hist-panel';
+  panel.id = 'govHistPnl';
+  var filterOptsHtml = FILE_ORDER.map(function (f) {
+    return '<div class="gov-hist-filter-opt" data-value="' + f + '"><span class="gov-hist-filter-opt-check"></span><span class="gov-hist-filter-opt-label">' + FILE_LABELS[f] + '</span></div>';
+  }).join('');
+  panel.innerHTML =
+    '<div class="gov-hist-panel-head">' +
+      '<span class="gov-hist-panel-title">수정 · 삭제 히스토리<span class="gov-hist-panel-count" id="govHistCount"></span></span>' +
+      '<button class="gov-hist-close" id="govHistCloseBtn" aria-label="닫기">&times;</button>' +
+    '</div>' +
+    '<div class="gov-hist-toolbar">' +
+      '<div class="gov-hist-search-wrap">' +
+        '<svg class="gov-hist-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>' +
+        '<input type="text" class="gov-hist-search" id="govHistSearch" placeholder="검색">' +
+      '</div>' +
+      '<div class="gov-hist-filter-wrap">' +
+        '<button type="button" class="gov-hist-filter" id="govHistFilterBtn"><span id="govHistFilterLabel">전체</span><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>' +
+        '<div class="gov-hist-filter-menu" id="govHistFilterMenu">' +
+          '<div class="gov-hist-filter-opt active" data-value="all"><span class="gov-hist-filter-opt-check">\u2713</span><span class="gov-hist-filter-opt-label">전체</span></div>' +
+          '<div class="gov-hist-filter-divider"></div>' +
+          filterOptsHtml +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="gov-hist-panel-body" id="govHistBody"></div>';
+  document.body.appendChild(panel);
+
+  function escapeHtml(s) {
+    var d = document.createElement('div');
+    d.textContent = s || '';
+    return d.innerHTML;
+  }
+
+  var ALL_ITEMS = null;
+  function resolveBadge(m) {
+    var card = m.closest('[data-pattern-id]');
+    if (card) return card.getAttribute('data-pattern-id');
+    var sec = m.closest('section[data-section]');
+    if (sec) {
+      var b = sec.querySelector('.section-code-badge');
+      if (b) return b.textContent.trim();
+    }
+    return CURRENT_FILE;
+  }
+  function collectCurrentItems() {
+    var marks = Array.prototype.slice.call(document.querySelectorAll('mark.gov-mark')).map(function (m) {
+      return {
+        file: CURRENT_FILE,
+        hid: m.getAttribute('data-hid'),
+        badge: resolveBadge(m),
+        label: m.getAttribute('data-label') || '수정 내용',
+        before: m.getAttribute('data-before') || '',
+        after: m.textContent,
+        date: m.getAttribute('data-date') || '',
+        kind: 'edit',
+        url: null,
+        el: m
+      };
+    });
+    var deletions = CURRENT_DELETIONS.map(function (d) {
+      return {
+        file: CURRENT_FILE, hid: d.hid, badge: d.badge, label: '제거', removedLabel: d.removedLabel || '제거',
+        before: d.before, after: null, date: d.date,
+        kind: 'delete', url: null, el: null, selector: d.selector
+      };
+    });
+    return marks.concat(deletions);
+  }
+  function collectOtherItems() {
+    var out = [];
+    OTHERS.forEach(function (OTHER) {
+      OTHER.items.forEach(function (it) {
+        out.push({
+          file: OTHER.file, hid: it.hid, badge: it.badge, label: it.label,
+          before: it.before, after: it.after, date: it.date, kind: 'edit', url: OTHER.url, el: null
+        });
+      });
+      (OTHER.deletions || []).forEach(function (d) {
+        out.push({
+          file: OTHER.file, hid: d.hid, badge: d.badge, label: '제거', removedLabel: d.removedLabel || '제거',
+          before: d.before, after: null, date: d.date, kind: 'delete', url: OTHER.url, el: null, selector: d.selector
+        });
+      });
+    });
+    return out;
+  }
+  function getAllItems() {
+    if (!ALL_ITEMS) ALL_ITEMS = collectCurrentItems().concat(collectOtherItems());
+    return ALL_ITEMS;
+  }
+
+  function timeAgo(dateStr) {
+    if (!dateStr) return '';
+    var then = new Date(dateStr).getTime();
+    if (isNaN(then)) return '';
+    var diffMs = Math.max(0, Date.now() - then);
+    var min = Math.floor(diffMs / 60000);
+    if (min < 1) return '방금 전';
+    if (min < 60) return min + '분 전';
+    var hr = Math.floor(min / 60);
+    if (hr < 24) return hr + '시간 전';
+    var day = Math.floor(hr / 24);
+    if (day < 30) return day + '일 전';
+    var month = Math.floor(day / 30);
+    if (month < 12) return month + '개월 전';
+    var year = Math.floor(month / 12);
+    return year + '년 전';
+  }
+
+  function render() {
+    var body = document.getElementById('govHistBody');
+    var countEl = document.getElementById('govHistCount');
+    var q = (document.getElementById('govHistSearch').value || '').trim().toLowerCase();
+    var filter = currentFilter;
+
+    var items = getAllItems().filter(function (it) {
+      if (filter !== 'all' && it.file !== filter) return false;
+      if (q) {
+        var hay = (it.badge + ' ' + it.before + ' ' + it.after).toLowerCase();
+        if (hay.indexOf(q) === -1) return false;
+      }
+      return true;
+    });
+    if (filter === 'all') {
+      items.sort(function (a, b) {
+        var ta = new Date(a.date).getTime(); if (isNaN(ta)) ta = 0;
+        var tb = new Date(b.date).getTime(); if (isNaN(tb)) tb = 0;
+        if (tb !== ta) return tb - ta;
+        var fa = FILE_ORDER.indexOf(a.file);
+        var fb = FILE_ORDER.indexOf(b.file);
+        if (fa !== fb) return fa - fb;
+        return String(a.hid).localeCompare(String(b.hid), undefined, { numeric: true });
+      });
+    }
+
+    countEl.textContent = items.length;
+    body.innerHTML = '';
+    if (items.length === 0) {
+      body.innerHTML = '<div class="gov-hist-empty">일치하는 수정 이력이 없습니다</div>';
+      return;
+    }
+    items.forEach(function (it) {
+      var row = document.createElement('button');
+      row.type = 'button';
+      row.className = 'gov-hist-item';
+      row.setAttribute('data-item-file', it.file);
+      row.setAttribute('data-item-hid', it.hid || '');
+      var html = '<div class="gov-hist-item-top">';
+      html += '<span class="gov-hist-item-badge">' + escapeHtml(it.badge || CURRENT_FILE) + '</span>';
+      html += '<span class="gov-hist-item-time">' + timeAgo(it.date) + '</span>';
+      html += '</div>';
+      if (it.kind === 'delete') {
+        html += '<div class="gov-hist-item-before">' + escapeHtml(it.before) + '</div>';
+        html += '<div class="gov-hist-item-removed">' + escapeHtml(it.removedLabel || '제거') + '</div>';
+      } else {
+        if (it.label === '수정 내용') {
+          html += '<div class="gov-hist-item-before">' + escapeHtml(it.before) + '</div>';
+        }
+        html += '<div class="gov-hist-item-after"><mark>' + escapeHtml(it.after) + '</mark></div>';
+      }
+      row.innerHTML = html;
+      row.addEventListener('click', function () { goToItem(it); });
+      body.appendChild(row);
+    });
+  }
+
+  function goToItem(it) {
+    if (it.file === CURRENT_FILE) {
+      if (it.kind === 'delete') {
+        var target = it.selector ? document.querySelector(it.selector) : null;
+        if (target) focusEl(target);
+      } else if (it.el) {
+        focusEl(it.el);
+      }
+    } else if (it.url) {
+      location.href = it.url + '#govhist=' + it.hid + '&f=' + encodeURIComponent(currentFilter);
+    }
+  }
+
+  function focusEl(el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    el.classList.remove('gov-mark-focus');
+    void el.offsetWidth;
+    el.classList.add('gov-mark-focus');
+    window.setTimeout(function () { el.classList.remove('gov-mark-focus'); }, 1200);
+  }
+
+  function openPanel() {
+    render();
+    overlay.classList.add('open');
+    panel.classList.add('open');
+    document.body.classList.add('gov-hist-lock');
+  }
+  function closePanel() {
+    overlay.classList.remove('open');
+    panel.classList.remove('open');
+    document.body.classList.remove('gov-hist-lock');
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var btn = document.getElementById('govHistBtn');
+    if (btn) btn.addEventListener('click', function () {
+      currentFilter = CURRENT_FILE;
+      var fm = document.getElementById('govHistFilterMenu');
+      var fl = document.getElementById('govHistFilterLabel');
+      if (fm) {
+        Array.prototype.slice.call(fm.querySelectorAll('.gov-hist-filter-opt')).forEach(function (o) {
+          var isActive = (o.getAttribute('data-value') === CURRENT_FILE);
+          o.classList.toggle('active', isActive);
+          var chk = o.querySelector('.gov-hist-filter-opt-check');
+          if (chk) chk.textContent = isActive ? '\u2713' : '';
+          if (isActive && fl) fl.textContent = o.querySelector('.gov-hist-filter-opt-label').textContent;
+        });
+      }
+      openPanel();
+    });
+    var closeBtn = document.getElementById('govHistCloseBtn');
+    if (closeBtn) closeBtn.addEventListener('click', closePanel);
+    overlay.addEventListener('click', closePanel);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePanel(); });
+    document.getElementById('govHistSearch').addEventListener('input', render);
+    var filterBtn = document.getElementById('govHistFilterBtn');
+    var filterMenu = document.getElementById('govHistFilterMenu');
+    var filterLabel = document.getElementById('govHistFilterLabel');
+
+    var countsByFile = {};
+    getAllItems().forEach(function (it) { countsByFile[it.file] = (countsByFile[it.file] || 0) + 1; });
+    Array.prototype.slice.call(filterMenu.querySelectorAll('.gov-hist-filter-opt[data-value]')).forEach(function (o) {
+      var v = o.getAttribute('data-value');
+      if (v !== 'all' && !countsByFile[v]) o.classList.add('disabled');
+    });
+
+    if (filterBtn) {
+      filterBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        filterMenu.classList.toggle('open');
+      });
+    }
+    if (filterMenu) {
+      Array.prototype.slice.call(filterMenu.querySelectorAll('.gov-hist-filter-opt')).forEach(function (opt) {
+        opt.addEventListener('click', function () {
+          if (opt.classList.contains('disabled')) return;
+          currentFilter = opt.getAttribute('data-value');
+          filterLabel.textContent = opt.querySelector('.gov-hist-filter-opt-label').textContent;
+          Array.prototype.slice.call(filterMenu.querySelectorAll('.gov-hist-filter-opt')).forEach(function (o) {
+            var isActive = (o === opt);
+            o.classList.toggle('active', isActive);
+            var chk = o.querySelector('.gov-hist-filter-opt-check');
+            if (chk) chk.textContent = isActive ? '\u2713' : '';
+          });
+          filterMenu.classList.remove('open');
+          render();
+        });
+      });
+    }
+    document.addEventListener('click', function () { if (filterMenu) filterMenu.classList.remove('open'); });
+
+    if (location.hash.indexOf('#govhist=') === 0) {
+      var hashBody = location.hash.slice('#govhist='.length);
+      var hashParts = hashBody.split('&f=');
+      var hid = hashParts[0];
+      var fParam = hashParts[1] ? decodeURIComponent(hashParts[1]) : 'all';
+      currentFilter = fParam;
+      if (filterMenu) {
+        Array.prototype.slice.call(filterMenu.querySelectorAll('.gov-hist-filter-opt')).forEach(function (o) {
+          var isActive = (o.getAttribute('data-value') === fParam);
+          o.classList.toggle('active', isActive);
+          var chk = o.querySelector('.gov-hist-filter-opt-check');
+          if (chk) chk.textContent = isActive ? '\u2713' : '';
+          if (isActive && filterLabel) filterLabel.textContent = o.querySelector('.gov-hist-filter-opt-label').textContent;
+        });
+      }
+      openPanel();
+      var selRow = document.querySelector('#govHistBody .gov-hist-item[data-item-file="' + CURRENT_FILE + '"][data-item-hid="' + hid + '"]');
+      if (selRow) {
+        selRow.scrollIntoView({ block: 'center' });
+        selRow.classList.add('gov-hist-item-active');
+        window.setTimeout(function () { selRow.classList.remove('gov-hist-item-active'); }, 1200);
+      }
+      var target = document.querySelector('mark.gov-mark[data-hid="' + hid + '"]');
+      if (!target) {
+        var delMatch = CURRENT_DELETIONS.filter(function (d) { return d.hid === hid; })[0];
+        if (delMatch && delMatch.selector) target = document.querySelector(delMatch.selector);
+      }
+      if (target) {
+        window.setTimeout(function () { focusEl(target); }, 300);
+      }
+    }
+  });
+})();
 </script>
 </body>
 </html>
